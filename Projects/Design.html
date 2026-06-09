@@ -14,52 +14,58 @@ body, table, td, th, p, span, div {
   color: #ffffff !important;
 }
 
-/* TABLE */
+/* ✅ TABLE */
 table {
   border-collapse: collapse;
   width: 100%;
+  font-size: 12px; /* smaller text */
 }
 
-/* CELLS */
+/* ✅ CELLS (SMALLER ROWS) */
 td, th {
   border: 1px solid #475569;
   text-align: left;
-  padding: 10px;
+  padding: 4px 6px;   /* 🔥 MUCH smaller */
+  line-height: 1.2;   /* tighter spacing */
 }
 
-/* HEADER */
+/* ✅ ROW HEIGHT CONTROL */
+tr {
+  height: 30px;
+}
+
+/* ✅ HEADER */
 th {
   background-color: #020617;
 }
 
-/* ROW STRIPES */
+/* ✅ STRIPES */
 tr:nth-child(even) {
   background-color: #020617;
 }
 
-/* HOVER EFFECT (PRO LOOK) */
+/* ✅ HOVER */
 tr:hover {
   background-color: #1e293b;
 }
 
-/* GALLERY */
-div.gallery {
-  border: 1px solid #334155;
-}
-
-div.gallery:hover {
-  border: 1px solid #38bdf8;
-}
-
+/* ✅ SMALL IMAGE (IMPORTANT) */
 div.gallery img {
-  width: 100%;
+  width: 50px;  /* 🔥 shrink image */
   height: auto;
 }
 
-/* RESPONSIVE */
+/* ✅ REMOVE EXTRA SPACE */
+div.gallery {
+  padding: 2px;
+  margin: 0;
+  border: 1px solid #334155;
+}
+
+/* ✅ RESPONSIVE */
 .responsive {
-  width: 100%;
-  padding: 5px;
+  width: auto;
+  padding: 0;
 }
 
 * {
@@ -82,65 +88,46 @@ div.gallery img {
 
   <tr>
     <td>Logo</td>
-    <td>I can help you design and create a logo for your organisation.</td>
+    <td>Create logos for your organisation.</td>
     <td>PNG, JPG</td>
-    <td>R50 (5 logos) / R10 each</td>
-    <td>
-      <div class="gallery">
-        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-      </div>
-    </td>
+    <td>R50 / 5 logos</td>
+    <td><div class="gallery"><img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png"></div></td>
   </tr>
 
   <tr>
     <td>Poster</td>
-    <td>Includes images, text areas and a suitable background.</td>
+    <td>Custom posters with text and graphics.</td>
     <td>PNG, JPG</td>
-    <td>R150 (Quantity dependent)</td>
-    <td>
-      <div class="gallery">
-        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-      </div>
-    </td>
+    <td>R150</td>
+    <td><div class="gallery"><img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png"></div></td>
   </tr>
 
   <tr>
     <td>Event Poster</td>
-    <td>Includes date, time, venue and custom design elements.</td>
+    <td>Date, time, venue design posters.</td>
     <td>PNG, JPG</td>
-    <td>R150 (Quantity dependent)</td>
-    <td>
-      <div class="gallery">
-        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-      </div>
-    </td>
+    <td>R150</td>
+    <td><div class="gallery"><img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png"></div></td>
   </tr>
 
   <tr>
     <td>Product Poster</td>
-    <td>Includes pricing, images and product descriptions.</td>
+    <td>Product adverts with images.</td>
     <td>PNG, JPG</td>
-    <td>R100 (Quantity dependent)</td>
-    <td>
-      <div class="gallery">
-        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-      </div>
-    </td>
+    <td>R100</td>
+    <td><div class="gallery"><img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png"></div></td>
   </tr>
 
   <tr>
-    <td>Product Price List</td>
-    <td>Includes pricing, contact info and product details (up to 10 items recommended).</td>
+    <td>Price List</td>
+    <td>Show products + pricing cleanly.</td>
     <td>PNG, JPG</td>
-    <td>R450 (Quantity dependent)</td>
-    <td>
-      <div class="gallery">
-        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-      </div>
-    </td>
+    <td>R450</td>
+    <td><div class="gallery"><img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png"></div></td>
   </tr>
 
 </table>
 
 </body>
 </html>
+``
