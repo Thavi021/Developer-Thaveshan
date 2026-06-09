@@ -2,25 +2,50 @@
 <html>
 <head>
 <style>
+
+body {
+  background-color: #0f172a;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* ✅ FORCE EVERYTHING WHITE */
+body, p, span, div, td, th, a {
+  color: #ffffff !important;
+}
+
+/* TABLE */
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  color: #ffffff;
 }
 
+/* CELLS */
 td, th {
-  border: 1px solid #716f6f;
+  border: 1px solid #475569;
   text-align: left;
   padding: 8px;
+  color: #ffffff;
 }
 
+/* HEADER STYLE */
+th {
+  background-color: #020617;
+}
 
+/* ROW STYLE */
+tr:nth-child(even) {
+  background-color: #020617;
+}
+
+/* GALLERY */
 div.gallery {
-  border: 1px solid #9a9595;
+  border: 1px solid #334155;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid #38bdf8;
 }
 
 div.gallery img {
@@ -28,45 +53,20 @@ div.gallery img {
   height: auto;
 }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
+/* RESPONSIVE */
 * {
   box-sizing: border-box;
 }
 
 .responsive {
   padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+  width: 100%;
 }
 
 </style>
 </head>
+
 <body>
-
-
 
 <table>
   <tr>
@@ -76,75 +76,68 @@ div.desc {
     <th>Price</th>
     <th>Image</th>
   </tr>
+
   <tr>
     <td>Sign up - Login</td>
-    <td>Sign up adhearing to password parameters: 8 -12 characters, Uppercase, lowercase, special character and a digit.</td>
+    <td>Password rules: 8–12 characters, uppercase, lowercase, special character and digit.</td>
     <td>Java, JOptionPane</td>
     <td>R1,000.00</td>
-
-      <td><div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-            <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-          </a>
-         
-      </div> </td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
   </tr>
+
   <tr>
     <td>Sign up - Login</td>
-    <td>Sign up adhearing to password parameters: 8 -12 characters, Uppercase, lowercase, special character and a digit.</td>
+    <td>Password rules: 8–12 characters, uppercase, lowercase, special character and digit.</td>
     <td>C#, Console</td>
     <td>R1,000.00</td>
-    <td><div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-            <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-          </a>
-          
-      </div> </td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
   </tr>
+
   <tr>
     <td>Other Java</td>
-    <td>Java console application contain lists arrays, and more. </td>
-    <td>Java, SQL(Optional)</td>
+    <td>Console application using arrays, lists and more.</td>
+    <td>Java, SQL (Optional)</td>
     <td>R1,000.00</td>
-    <td><div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-            <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-          </a>
-         
-      </div></td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
   </tr>
+
   <tr>
     <td>Other C#</td>
-    <td>C# Console application user can comandline to add values process them and display the values.</td>
-    <td>C#, SQL(Optional)</td>
+    <td>Console app for processing input and displaying output.</td>
+    <td>C#, SQL (Optional)</td>
     <td>R1,000.00</td>
-    <td><div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-            <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-          </a>
-         
-      </div></td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
   </tr>
+
   <tr>
     <td>Python CSV</td>
-    <td>Python Console application to read from a CSV File</td>
-    <td>Java, CSV, Jupiter Notebook</td>
+    <td>Reads and processes data from CSV files.</td>
+    <td>Python, CSV, Jupyter Notebook</td>
     <td>R1,000.00</td>
-    <td><div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-            <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-          </a>
-          
-      </div></td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
   </tr>
- 
+
 </table>
 
 </body>
 </html>
-
