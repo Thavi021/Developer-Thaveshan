@@ -11,29 +11,33 @@
 <style>
 body {
   background-color: #0f172a;
-  color: #e2e8f0;
+  color: #ffffff; /* ✅ FORCE WHITE TEXT */
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Navbar */
 .navbar {
   background-color: #020617;
 }
 
-/* Sections */
 .section {
   margin-top: 40px;
 }
 
-/* Cards */
 .project-card {
   background-color: #020617;
   border: 1px solid #1e293b;
   border-radius: 12px;
   padding: 20px;
+  color: #ffffff; /* ✅ FIXED CARD TEXT */
 }
 
-/* Iframe styling */
+/* ✅ FORCE ALL TEXT INSIDE CARDS TO WHITE */
+.project-card h3,
+.project-card p {
+  color: #ffffff;
+}
+
+/* Iframes */
 iframe {
   width: 100%;
   height: 350px;
@@ -41,10 +45,15 @@ iframe {
   border: none;
 }
 
-/* Headings */
+/* Better visible headings */
 h3 {
   margin-bottom: 15px;
   color: #38bdf8;
+}
+
+/* Navbar links */
+.navbar a {
+  color: #ffffff !important;
 }
 </style>
 </head>
@@ -55,9 +64,9 @@ h3 {
 <nav class="navbar navbar-dark px-4">
   <span class="navbar-brand fw-bold">Thavi Naidoo</span>
   <div>
-    <a href="index.html" class="text-light me-3">Home</a>
-    <a href="#" class="text-light me-3">Projects</a>
-    <a href="about.html" class="text-light">Certificates</a>
+    <a href="index.html" class="me-3">Home</a>
+    <a href="#" class="me-3">Projects</a>
+    <a href="about.html">Certificates</a>
   </div>
 </nav>
 
