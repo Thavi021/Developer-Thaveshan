@@ -1,62 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
 <style>
 
-/* ✅ FORCE EVERYTHING WHITE */
+body {
+  background-color: #0f172a;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* ✅ FORCE ALL TEXT WHITE */
 * {
   color: #ffffff !important;
 }
 
-/* BODY */
-body {
-  background-color: #0f172a !important;
-  font-family: Arial, sans-serif;
-}
-
-/* TABLE */
+/* ✅ TABLE */
 table {
   border-collapse: collapse;
   width: 100%;
-  font-size: 12px; /* 🔥 smaller text */
+  font-size: 12px;
+  table-layout: fixed;
 }
 
-/* ✅ SMALLER CELLS */
+/* ✅ CELLS (COMPACT) */
 td, th {
   border: 1px solid #475569;
   text-align: left;
-  padding: 4px 6px;   /* 🔥 MUCH smaller */
-  line-height: 1.2;   /* tighter spacing */
+  padding: 5px 7px;
+  line-height: 1.3;
+  vertical-align: middle;
 }
 
-/* ✅ FORCE SMALL ROW HEIGHT */
-tr {
-  height: 28px;
-}
-
-/* HEADER */
+/* ✅ HEADER */
 th {
-  background-color: #020617 !important;
+  background-color: #020617;
+  font-weight: bold;
 }
 
-/* ROW COLORS */
+/* ✅ STRIPES */
 tr:nth-child(even) {
-  background-color: #020617 !important;
+  background-color: #020617;
 }
 
-/* HOVER */
+/* ✅ HOVER */
 tr:hover {
-  background-color: #1e293b !important;
+  background-color: #1e293b;
 }
 
-/* ✅ FIX BIG IMAGE PROBLEM */
+/* ✅ FIX IMAGE SIZE */
 div.gallery img {
-  width: 50px;   /* 🔥 key fix */
+  width: 45px;
   height: auto;
+  display: block;
 }
 
-/* ✅ REMOVE EXTRA SPACE */
+/* ✅ CLEAN IMAGE BOX */
 div.gallery {
   padding: 2px;
   margin: 0;
   border: 1px solid #334155;
 }
 
+/* ✅ WRAP TEXT PROPERLY */
+td {
+  max-width: 250px;
+  word-wrap: break-word;
+}
+
 </style>
+</head>
+
+<body>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Languages</th>
+    <th>Price</th>
+    <th>Image</th>
+  </tr>
+
+  <tr>
+    <td>CV Website</td>
+    <td>Professional personal CV website to showcase your skills and experience online.</td>
+    <td>HTML, CSS, JS</td>
+    <td>R350+</td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>One Page Website</td>
+    <td>Simple business landing page to showcase services and contact details.</td>
+    <td>HTML, CSS, JS</td>
+    <td>R500+</td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Business Website</td>
+    <td>Multi-page website for companies with services, about, and contact sections.</td>
+    <td>HTML, CSS, JS</td>
+    <td>R1,500+</td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>E-Commerce Website</td>
+    <td>Online store with product listings, cart, checkout and admin dashboard.</td>
+    <td>HTML, CSS, JS, SQL</td>
+    <td>R5,000+</td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Portfolio Website</td>
+    <td>Modern developer or designer portfolio to showcase projects and skills.</td>
+    <td>HTML, CSS, JS</td>
+    <td>R800+</td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Custom Web App</td>
+    <td>Advanced web application with authentication, database, and business logic.</td>
+    <td>C#, .NET, SQL</td>
+    <td>R6,000+</td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
+  </tr>
+
+</table>
+
+</body>
+</html>
