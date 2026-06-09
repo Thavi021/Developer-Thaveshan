@@ -10,58 +10,64 @@ body {
 }
 
 /* ✅ FORCE ALL TEXT WHITE */
-body, table, td, th, p, span, div {
+* {
   color: #ffffff !important;
 }
 
-/* TABLE */
+/* ✅ TABLE */
 table {
   border-collapse: collapse;
   width: 100%;
+  font-size: 11px;      /* 🔥 smaller text */
+  table-layout: fixed;
 }
 
-/* CELLS */
+/* ✅ CELLS (VERY SMALL) */
 td, th {
   border: 1px solid #475569;
   text-align: left;
-  padding: 10px;
+  padding: 3px 5px;     /* 🔥 VERY compact */
+  line-height: 1.2;
+  vertical-align: middle;
 }
 
-/* HEADER STYLE */
+/* ✅ HEADER */
 th {
   background-color: #020617;
+  font-weight: bold;
 }
 
-/* STRIPED ROWS */
+/* ✅ STRIPES */
 tr:nth-child(even) {
   background-color: #020617;
 }
 
-/* HOVER EFFECT (Premium feel) */
+/* ✅ HOVER */
 tr:hover {
   background-color: #1e293b;
 }
 
-/* GALLERY */
+/* ✅ SMALL IMAGE (IMPORTANT FIX) */
+div.gallery img {
+  width: 40px;          /* 🔥 keeps rows small */
+  height: auto;
+  display: block;
+}
+
+/* ✅ CLEAN IMAGE BOX */
 div.gallery {
+  padding: 1px;
+  margin: 0;
   border: 1px solid #334155;
 }
 
-div.gallery:hover {
-  border: 1px solid #38bdf8;
+/* ✅ PREVENT TEXT FROM STRETCHING ROWS */
+td {
+  max-width: 180px;
+  word-wrap: break-word;
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-/* RESPONSIVE */
-.responsive {
-  width: 100%;
-  padding: 5px;
-}
-
+/* ✅ KEEP EVERYTHING NEAT */
 * {
   box-sizing: border-box;
 }
@@ -82,9 +88,9 @@ div.gallery img {
 
   <tr>
     <td>UML</td>
-    <td>UML diagrams (Unified Modeling Language) represent systems such as class, sequence, activity, and use case diagrams to assist developers with design and communication.</td>
+    <td>System diagrams like class, sequence, and use-case.</td>
     <td>PNG, JPG, XML</td>
-    <td>R500.00</td>
+    <td>R500</td>
     <td>
       <div class="gallery">
         <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
@@ -93,10 +99,10 @@ div.gallery img {
   </tr>
 
   <tr>
-    <td>Wireframe Diagram</td>
-    <td>Wireframes display the structure and layout of a system before final design, similar to a blueprint.</td>
+    <td>Wireframe</td>
+    <td>Layout design before final UI creation.</td>
     <td>PNG, JPG, XML</td>
-    <td>R800.00</td>
+    <td>R800</td>
     <td>
       <div class="gallery">
         <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
@@ -106,9 +112,9 @@ div.gallery img {
 
   <tr>
     <td>Pseudocode</td>
-    <td>Step-by-step logical description of an algorithm written in plain English before coding.</td>
+    <td>Step-by-step algorithm description.</td>
     <td>.TXT</td>
-    <td>R500.00</td>
+    <td>R500</td>
     <td>
       <div class="gallery">
         <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
@@ -117,10 +123,10 @@ div.gallery img {
   </tr>
 
   <tr>
-    <td>Cisco Packet Diagram</td>
-    <td>Network design including devices, cables, and IP configuration across systems.</td>
+    <td>Cisco Packet</td>
+    <td>Network design with devices and IP setup.</td>
     <td>.pkt</td>
-    <td>R1,500.00</td>
+    <td>R1,500</td>
     <td>
       <div class="gallery">
         <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
