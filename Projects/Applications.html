@@ -2,25 +2,45 @@
 <html>
 <head>
 <style>
+
+body {
+  background-color: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* ✅ TABLE */
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  color: white; /* FORCE WHITE */
 }
 
+/* ✅ CELLS */
 td, th {
-  border: 1px solid #716f6f;
+  border: 1px solid #475569;
   text-align: left;
-  padding: 8px;
+  padding: 10px;
+  color: white; /* FORCE WHITE */
 }
 
+/* ✅ HEADER STYLE (more visible) */
+th {
+  background-color: #020617;
+}
 
+/* ✅ ROW BACKGROUND */
+tr:nth-child(even) {
+  background-color: #020617;
+}
+
+/* ✅ GALLERY */
 div.gallery {
-  border: 1px solid #9a9595;
+  border: 1px solid #334155;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid #38bdf8;
 }
 
 div.gallery img {
@@ -28,45 +48,20 @@ div.gallery img {
   height: auto;
 }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
+/* RESPONSIVE */
 * {
   box-sizing: border-box;
 }
 
 .responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+  padding: 5px;
+  width: 100%;
 }
 
 </style>
 </head>
+
 <body>
-
-
 
 <table>
   <tr>
@@ -76,87 +71,80 @@ div.desc {
     <th>Price</th>
     <th>Image</th>
   </tr>
+
   <tr>
     <td>Sign up - Login</td>
-    <td>Sign up adhearing to password parameters: 8-12 characters, Uppercase, lowercase, special character and a digit.</td>
+    <td>Password rules: 8-12 characters, uppercase, lowercase, special character, and digit.</td>
     <td>Java</td>
     <td>R1,500.00</td>
-
-      <td><div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-            <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-          </a>
-         
-      </div> </td>
+    <td>
+      <div class="gallery">
+        https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png
+      </div>
+    </td>
   </tr>
+
   <tr>
     <td>Sign up - Login</td>
-    <td>Sign up adhearing to password parameters: 8 -12 characters, Uppercase, lowercase, special character and a digit.</td>
+    <td>Password rules: 8-12 characters, uppercase, lowercase, special character, and digit.</td>
     <td>C#, WPF, XAML</td>
     <td>R1,500.00</td>
-    <td><div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-            <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-          </a>
-         
-      </div> </td>
-  </tr>
-  <tr>
-    <td>Employee Management Application</td>
-    <td>Manage employees in your company, enter details, store them display them, calculations can be implemented.</td>
-    <td>Java, SQL(Optional)</td>
-    <td>R2,500.00 - no DB ; R3,500.00 - DB;</td>
-    <td><div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-            <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-          </a>
-         
-      </div></td>
-  </tr>
-  <tr>
-    <td>Employee Management Application</td>
-    <td>Manage employees in your company, enter details, store them display them, calculations can be implemented.</td>
-    <td>C#, WPF, XAML, SQL(Optional)</td>
-    <td>R2,500.00 - no DB ; R3,500.00 - DB;</td>
-    <td><div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-            <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-          </a>
-      
-      </div></td>
-  </tr>
-  <tr>
-    <td>Student Management Application</td>
-    <td>Manage students in your College/School, enter details, store, display, calculations can be implemented.</td>
-    <td>Java, SQL(Optional)</td>
-    <td>R2,500.00 - no DB ; R3,500.00 - DB;</td>
-    <td><div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-            <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-          </a>
-         
-      </div></td>
-  </tr>
-  <tr>
-    <td>Student Management Application</td>
-    <td>Manage students in your College/School, enter details, store, display, calculations can be implemented.</td>
-    <td>C#, WPF, XAML, SQL(Optional)</td>
-    <td>R2,500.00 - no DB ; R3,500.00 - DB;</td>
-    <td><div class="responsive">
+    <td>
       <div class="gallery">
-        <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-          <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-        </a>
+        https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png
       </div>
-    </div></td>
+    </td>
   </tr>
+
+  <tr>
+    <td>Employee Management App</td>
+    <td>Manage employees, store data, and perform calculations.</td>
+    <td>Java, SQL</td>
+    <td>R2,500 - R3,500</td>
+    <td>
+      <div class="gallery">
+        https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Employee Management App</td>
+    <td>Manage employees with full GUI and optional database.</td>
+    <td>C#, WPF, SQL</td>
+    <td>R2,500 - R3,500</td>
+    <td>
+      <div class="gallery">
+        https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Student Management App</td>
+    <td>Manage students, store info, and display results.</td>
+    <td>Java, SQL</td>
+    <td>R2,500 - R3,500</td>
+    <td>
+      <div class="gallery">
+        https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>Student Management App</td>
+    <td>Manage students with GUI and database integration.</td>
+    <td>C#, WPF, SQL</td>
+    <td>R2,500 - R3,500</td>
+    <td>
+      <div class="gallery">
+        https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
+  </tr>
+
 </table>
 
 </body>
 </html>
-
