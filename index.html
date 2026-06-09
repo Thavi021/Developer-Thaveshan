@@ -20,7 +20,7 @@ body {
   background-color: #020617;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
   padding: 80px 20px;
   background: linear-gradient(135deg, #020617, #1e293b);
@@ -32,11 +32,17 @@ body {
   background-color: #020617;
   border: 1px solid #1e293b;
   border-radius: 12px;
+  color: #ffffff; /* ✅ FIXED TEXT VISIBILITY */
 }
 
-/* Button */
+/* Buttons */
 .btn-custom {
   background-color: #2563eb;
+  color: white;
+}
+
+.btn-linkedin {
+  background-color: #0A66C2;
   color: white;
 }
 
@@ -79,12 +85,12 @@ footer {
     <h1 class="display-5">Professional Software Engineer</h1>
     <p class="lead mt-3">Websites • Applications • Databases • IT Consulting</p>
 
-    <!-- Github button -->
-    <a href="https://github.com/yourusername" target="_blank" class="btn btn-dark mt-3 me-2">
-      <i class="fab fa-github"></i> GitHub
+    <!-- ✅ LINKEDIN BUTTON -->
+    <a href="https://www.linkedin.com/in/YOUR-PROFILE" class="btn btn-linkedin me-2 mt-3">
+      <i class="fab fa-linkedin"></i> LinkedIn
     </a>
 
-    <!-- Email -->
+    <!-- EMAIL BUTTON -->
     <a href="mailto:Thaveshannaidooprogrammer@gmail.com" class="btn btn-custom mt-3">
       Contact Me
     </a>
@@ -92,15 +98,16 @@ footer {
 
   <!-- SERVICES + CONTACT -->
   <div class="row mt-5">
+    
     <div class="col-md-6">
       <div class="card p-4">
         <h4>Services</h4>
         <ul>
-          <li>✅ Website Development</li>
-          <li>✅ Database Design</li>
-          <li>✅ App Development</li>
-          <li>✅ Student Support & Tutoring</li>
-          <li>✅ CV & Career Guidance</li>
+          <li>Website Development</li>
+          <li>Database Design</li>
+          <li>App Development</li>
+          <li>Student Support & Tutoring</li>
+          <li>CV & Career Guidance</li>
         </ul>
       </div>
     </div>
@@ -114,6 +121,7 @@ footer {
         </a>
       </div>
     </div>
+
   </div>
 
   <!-- TECHNOLOGIES -->
@@ -121,7 +129,7 @@ footer {
     <h4 class="text-center">Technologies</h4>
     <div class="logo-grid text-center mt-3">
 
-      <!-- GitHub + 10+ logos -->
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" title="LinkedIn">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
@@ -146,3 +154,4 @@ footer {
 
 </body>
 </html>
+``
