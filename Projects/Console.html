@@ -9,58 +9,66 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* ✅ FORCE EVERYTHING WHITE */
-body, p, span, div, td, th, a {
+/* ✅ FORCE ALL TEXT WHITE */
+* {
   color: #ffffff !important;
 }
 
-/* TABLE */
+/* ✅ TABLE */
 table {
   border-collapse: collapse;
   width: 100%;
-  color: #ffffff;
+  font-size: 11px;   /* 🔥 smaller text */
 }
 
-/* CELLS */
+/* ✅ SUPER SMALL CELLS */
 td, th {
   border: 1px solid #475569;
   text-align: left;
-  padding: 8px;
-  color: #ffffff;
+  padding: 2px 4px;   /* 🔥 VERY tight */
+  line-height: 1.1;   /* 🔥 compact */
 }
 
-/* HEADER STYLE */
+/* ✅ FORCE SMALL ROW HEIGHT */
+tr {
+  height: 22px;       /* 🔥 very compact rows */
+}
+
+/* ✅ HEADER */
 th {
   background-color: #020617;
+  font-size: 11px;
 }
 
-/* ROW STYLE */
+/* ✅ STRIPES */
 tr:nth-child(even) {
   background-color: #020617;
 }
 
-/* GALLERY */
-div.gallery {
-  border: 1px solid #334155;
+/* ✅ HOVER */
+tr:hover {
+  background-color: #1e293b;
 }
 
-div.gallery:hover {
-  border: 1px solid #38bdf8;
-}
-
+/* ✅ VERY SMALL IMAGE (MOST IMPORTANT) */
 div.gallery img {
-  width: 100%;
+  width: 35px;   /* 🔥 key change */
   height: auto;
 }
 
-/* RESPONSIVE */
-* {
-  box-sizing: border-box;
+/* ✅ REMOVE EXTRA SPACE */
+div.gallery {
+  padding: 1px;
+  margin: 0;
+  border: 1px solid #334155;
 }
 
-.responsive {
-  padding: 0 6px;
-  width: 100%;
+/* ✅ PREVENT TEXT FROM EXPANDING ROWS */
+td {
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* 🔥 keeps rows small */
 }
 
 </style>
