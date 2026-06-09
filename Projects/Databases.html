@@ -2,25 +2,53 @@
 <html>
 <head>
 <style>
+
+body {
+  background-color: #0f172a;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* ✅ FORCE ALL TEXT WHITE */
+body, table, td, th, p, div, span {
+  color: #ffffff !important;
+}
+
+/* TABLE */
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
+/* CELLS */
 td, th {
-  border: 1px solid #716f6f;
+  border: 1px solid #475569;
   text-align: left;
-  padding: 8px;
+  padding: 10px;
 }
 
+/* HEADER */
+th {
+  background-color: #020617;
+}
 
+/* ROW STRIPES */
+tr:nth-child(even) {
+  background-color: #020617;
+}
+
+/* HOVER EFFECT */
+tr:hover {
+  background-color: #1e293b;
+}
+
+/* GALLERY */
 div.gallery {
-  border: 1px solid #9a9595;
+  border: 1px solid #334155;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid #38bdf8;
 }
 
 div.gallery img {
@@ -28,45 +56,20 @@ div.gallery img {
   height: auto;
 }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
+/* RESPONSIVE */
+.responsive {
+  width: 100%;
+  padding: 5px;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 </style>
 </head>
+
 <body>
-
-
 
 <table>
   <tr>
@@ -76,87 +79,80 @@ div.desc {
     <th>Price</th>
     <th>Image</th>
   </tr>
+
   <tr>
     <td>SQL CRUD Java</td>
     <td>CRUD application in Java JFrame.</td>
     <td>SQL, Java, JFrame</td>
-    <td>R2,500.00 Complexity Dependant</td>
-
-      <td><div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-            <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-          </a>
-        
-      </div> </td>
+    <td>R2,500.00</td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
   </tr>
+
   <tr>
     <td>SQL CRUD C#</td>
-    <td> Application with CRUD operation into a local database. Can be published to Azure(Ts&Cs).</td>
-    <td>C#, WPF, XAML, SQL</td>
-    <td>R2,500.00 Complexity Dependant</td>
-    <td><div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-            <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-          </a>
-        
-      </div> </td>
+    <td>CRUD operations with local DB and Azure support.</td>
+    <td>C#, WPF, SQL</td>
+    <td>R2,500.00</td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
   </tr>
+
   <tr>
     <td>Azure SQL Website</td>
-    <td>High-end Azure SQL Application with CRUD Operations, WPF Form and can be hosted, Azure costs per month.</td>
-    <td>C#, MVC, .NET, WPF, SQL, Azure</td>
-    <td>R5,500.00 Complexity Dependant</td>
-    <td><div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-            <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-          </a>
-          
-      </div></td>
+    <td>Full-stack Azure solution with hosting.</td>
+    <td>C#, .NET, SQL, Azure</td>
+    <td>R5,500.00</td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
   </tr>
+
   <tr>
     <td>MongoDB</td>
-    <td>CRUD Operations for a MongoDB Database. </td>
-    <td>NoSQL, MongoDB</td>
-    <td>R1,500.00 Complexity Dependant</td>
-    <td><div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-            <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-          </a>
-          
-      </div></td>
+    <td>CRUD database operations for NoSQL systems.</td>
+    <td>MongoDB, NoSQL</td>
+    <td>R1,500.00</td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
   </tr>
+
   <tr>
     <td>Firebase</td>
-    <td>A Firebase Database created with CRUD Operations, can be applied with a mobile application on android. </td>
-    <td>Java, Android, Firebase.</td>
-    <td>R2,000.00 Complexity Dependant</td>
-    <td><div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-            <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-          </a>
-         
-      </div></td>
-  </tr>
-  <tr>
-    <td>SQLLite</td>
-    <td>Console Database, can be implemented in Java projects, CRUD operations included. </td>
-    <td>SQLLite</td>
-    <td>R1,500.00 Complexity Dependant</td>
-    <td><div class="responsive">
+    <td>Realtime database for mobile apps (Android).</td>
+    <td>Java, Firebase</td>
+    <td>R2,000.00</td>
+    <td>
       <div class="gallery">
-        <a target="_blank" href="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-          <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png" alt="Forest" width="600" height="400">
-        </a>
-       
-    </div></td>
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
   </tr>
+
+  <tr>
+    <td>SQLite</td>
+    <td>Lightweight embedded database with CRUD.</td>
+    <td>SQLite</td>
+    <td>R1,500.00</td>
+    <td>
+      <div class="gallery">
+        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
+      </div>
+    </td>
+  </tr>
+
 </table>
 
 </body>
 </html>
-
