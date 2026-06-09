@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
 <style>
 
 body {
@@ -14,52 +11,58 @@ body, table, td, th, p, div, span {
   color: #ffffff !important;
 }
 
-/* TABLE */
+/* ✅ TABLE */
 table {
   border-collapse: collapse;
   width: 100%;
+  font-size: 12px; /* 🔥 smaller font */
 }
 
-/* CELLS */
+/* ✅ SMALL COMPACT CELLS */
 td, th {
   border: 1px solid #475569;
   text-align: left;
-  padding: 10px;
+  padding: 4px 6px;   /* 🔥 MUCH smaller */
+  line-height: 1.2;   /* tighter spacing */
 }
 
-/* HEADER */
+/* ✅ FORCE SMALL ROW HEIGHT */
+tr {
+  height: 28px;
+}
+
+/* ✅ HEADER */
 th {
   background-color: #020617;
 }
 
-/* ROW STRIPES */
+/* ✅ STRIPES */
 tr:nth-child(even) {
   background-color: #020617;
 }
 
-/* HOVER EFFECT */
+/* ✅ HOVER */
 tr:hover {
   background-color: #1e293b;
 }
 
-/* GALLERY */
-div.gallery {
-  border: 1px solid #334155;
-}
-
-div.gallery:hover {
-  border: 1px solid #38bdf8;
-}
-
+/* ✅ FIX IMAGE SIZE (VERY IMPORTANT) */
 div.gallery img {
-  width: 100%;
+  width: 50px;   /* 🔥 THIS is key */
   height: auto;
 }
 
-/* RESPONSIVE */
+/* ✅ REMOVE EXTRA IMAGE SPACE */
+div.gallery {
+  padding: 2px;
+  margin: 0;
+  border: 1px solid #334155;
+}
+
+/* ✅ CLEAN RESPONSIVE */
 .responsive {
-  width: 100%;
-  padding: 5px;
+  width: auto;
+  padding: 0;
 }
 
 * {
@@ -67,92 +70,3 @@ div.gallery img {
 }
 
 </style>
-</head>
-
-<body>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Languages</th>
-    <th>Price</th>
-    <th>Image</th>
-  </tr>
-
-  <tr>
-    <td>SQL CRUD Java</td>
-    <td>CRUD application in Java JFrame.</td>
-    <td>SQL, Java, JFrame</td>
-    <td>R2,500.00</td>
-    <td>
-      <div class="gallery">
-        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td>SQL CRUD C#</td>
-    <td>CRUD operations with local DB and Azure support.</td>
-    <td>C#, WPF, SQL</td>
-    <td>R2,500.00</td>
-    <td>
-      <div class="gallery">
-        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Azure SQL Website</td>
-    <td>Full-stack Azure solution with hosting.</td>
-    <td>C#, .NET, SQL, Azure</td>
-    <td>R5,500.00</td>
-    <td>
-      <div class="gallery">
-        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td>MongoDB</td>
-    <td>CRUD database operations for NoSQL systems.</td>
-    <td>MongoDB, NoSQL</td>
-    <td>R1,500.00</td>
-    <td>
-      <div class="gallery">
-        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td>Firebase</td>
-    <td>Realtime database for mobile apps (Android).</td>
-    <td>Java, Firebase</td>
-    <td>R2,000.00</td>
-    <td>
-      <div class="gallery">
-        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-      </div>
-    </td>
-  </tr>
-
-  <tr>
-    <td>SQLite</td>
-    <td>Lightweight embedded database with CRUD.</td>
-    <td>SQLite</td>
-    <td>R1,500.00</td>
-    <td>
-      <div class="gallery">
-        <img src="https://digitalweb4u.co.uk/wp-content/uploads/2020/08/Favicon-Design-2.png">
-      </div>
-    </td>
-  </tr>
-
-</table>
-
-</body>
-</html>
