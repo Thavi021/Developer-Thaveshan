@@ -9,19 +9,26 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* ✅ TABLE */
-table {
-  border-collapse: collapse;
-  width: 100%;
-  color: white; /* FORCE WHITE */
-}
-
-/* ✅ CELLS */
+/* ✅ SMALLER ROWS */
 td, th {
   border: 1px solid #475569;
   text-align: left;
-  padding: 10px;
-  color: white; /* FORCE WHITE */
+  padding: 5px 8px;  /* 🔥 reduced from 10px */
+  font-size: 13px;   /* 🔥 slightly smaller text */
+  line-height: 1.3;  /* tighter spacing */
+}
+
+/* ✅ MAKE IMAGES SMALLER */
+div.gallery img {
+  width: 80px;       /* 🔥 control image size */
+  height: auto;
+}
+
+/* ✅ OPTIONAL: shrink table height further */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13px;
 }
 
 /* ✅ HEADER STYLE (more visible) */
